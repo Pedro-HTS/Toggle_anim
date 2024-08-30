@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle {
+  cursor: pointer;
+  position: relative;
+  background-color: #c8c8c8;
+  height: 155px;
+  width: 300px;
+  border-radius: 100px;
+  transition: all 0.4s ease;
+}
+
+.toggle .icon {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(255, 255, 255);
+  transform: translateY(-50%);
+  left: 5%;
+  top: 50%;
+  font-size: 70px;
+  color: #868686;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.toggle.active {
+  background-color: darkslateblue;
+}
+
+.toggle.active .icon {
+  left: calc(100% - 120px - 5%);
+  color: darkslateblue;
+}
